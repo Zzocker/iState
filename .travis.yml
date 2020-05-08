@@ -1,3 +1,5 @@
 language: go
+before_script:
+  - cd $GOPATH/src/github.com/motoreq/istate
 script:
   - go build
