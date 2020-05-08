@@ -6,8 +6,5 @@ env:
 git:
   depth:
     1
-before_script:
-  - echo `pwd`
 script:
-  - ehco `pwd`
   - env GO111MODULE=on go build
