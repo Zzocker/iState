@@ -2,8 +2,7 @@ language: go
 go:
   - 1.12.x
 env:
-  global:
-    - GO111MODULE=on
+  - GO111MODULE=on
 git:
   depth:
     1
@@ -12,6 +11,6 @@ jobs:
    - name : build
      script : go build
    - name : test
-     script:
-      - cd test/chaincode
-      - go test -v 
+     script: 
+      cd test/chaincode
+      go test -v 
