@@ -1,0 +1,7 @@
+language: go
+git:
+  depth:
+    1
+script:
+  - cd $HOME/gopath/src/github.com/motoreq/istate
+  - go build
