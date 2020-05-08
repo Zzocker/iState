@@ -1,7 +1,9 @@
 language: go
+go:
+  - 1.12.x
 git:
   depth:
     1
 script:
   - cd $HOME/gopath/src/github.com/motoreq/istate
-  - go build
+  - env GO111MODULE=on go build
