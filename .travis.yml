@@ -6,5 +6,11 @@ env:
 git:
   depth:
     1
-script:
-  - go build
+jobs:
+  include:
+     - stage : build
+       name : build
+       script:
+        - go build
+
+
