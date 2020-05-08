@@ -9,7 +9,9 @@ git:
     1
 jobs:
   include:
+   - name : build
    - script : go build
+   - name : test
    - script:
       - cd test/chaincode
       - go test -v 
