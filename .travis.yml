@@ -5,5 +5,5 @@ git:
   depth:
     1
 script:
-  - cd $HOME/gopath/src/github.com/motoreq/istate
+  - ehco `pwd`
   - env GO111MODULE=on go build
