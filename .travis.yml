@@ -7,5 +7,9 @@ env:
 git:
   depth:
     1
-script:
-  - go build
+jobs:
+  include:
+   - script : go build
+   - script:
+      - cd test/chaincode
+      - go test -v 
