@@ -12,5 +12,5 @@ jobs:
      script : go build
    - name : test
      script: 
-      cd test/chaincode
-      go test -v 
+      - cd test/chaincode && go test -v 
+      
