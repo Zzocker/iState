@@ -38,6 +38,7 @@ istate is a state management package for Hyperledger fabric chaincode. It can be
 * Get the shim package 
 	
 	```go get github.com/hyperledger/fabric/core/chaincode/shim@release-1.4```
+- add `import github.com/motoreq/istate` in your chaincode
 
 That's all, istate is ready to be used in the chaincode.
 
